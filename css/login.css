@@ -38,7 +38,7 @@ body {
     min-height: 100vh;
     flex-direction: column;   
     width: 100%;
-    background: url(/images/simple-black-gold-background_43173725941.jpg)no-repeat;
+    background: url(/images/background-login.jpg)no-repeat;
     background-position: center;
     background-size: cover;
 }

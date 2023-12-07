@@ -36,7 +36,7 @@ header {
     flex-direction: column;
     min-height: 100%;   
     width: 100%;
-    background: url(/images/hinh-nen-toi-tam_061743143.jpg)no-repeat;
+    background: url(/images/background-signup.jpg)no-repeat;
     background-position: center;
     background-size: cover;
 }
