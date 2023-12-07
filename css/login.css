@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    background-color: rgba(0, 0 , 0, 0.8);
+}
+body {
+    display: flex;
+}
+
+/* Phần navbar */
+.navbar {
+    background-color: rgba(0, 0 , 0, 0.8);
+}
+.nav-link {
+    color: #fff
+}
+.nav-link:hover {
+    color: aqua;
+}
+
+.image {
+    width: 50px;
+}
+
+/* Phần form */
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    min-height: 100vh;
+    flex-direction: column;   
+    width: 100%;
+    background: url(/images/simple-black-gold-background_43173725941.jpg)no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.form-box {
+    position: relative;
+    border-radius: 20px;
+    background-color: rgba(30, 28, 29, 0.4);
+    backdrop-filter: blur(5px);
+    width: 400px;
+    height: 400px;
+    margin: auto 0;
+}
+
+form {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+img {
+    margin-top: auto;
+    border-radius: 20px;
+}
+
+.title {
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.inputbox {
+    position: relative;
+    margin: 30px 0;
+    width: 400px;
+    border-bottom: 2px solid #fff;
+}
+
+.inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+    top: -5px;
+}
+
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: #fff;
+}
+
+.inputbox i {
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    top: 20px;
+}
+
+.forget {
+    margin: -15px 0 15px;
+    font-size: -9em;
+    color: #fff;
+}
+.forget label {
+    margin-top: 10px;
+}
+
+.forget label a {
+    margin-left: 160px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.forget label a:hover {
+    text-decoration: underline;
+    color: aquamarine;
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    border-radius: 40px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.btn:hover {
+    background-color: lightblue;
+    box-shadow: 1px 1px 2px 1px rgba(255, 255, 255, 0.8);
+}
+
+.register {
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register p a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.register p a:hover {
+    text-decoration: underline;
+    color: aquamarine;
+}
+
+input[type=checkbox] {
+    transform: scale(1.1);
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.form__content-detail {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.form__content-detail p {
+    font-size: 25px;
+}
+
+.icon {
+    color: pink;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.icon a {
+    text-decoration: none;
+}
+
+.icon a i {
+    color: palegreen;
+    font-size: 25px;
+    letter-spacing: 10px;
+    margin-top: 20px;
+}
