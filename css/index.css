@@ -224,3 +224,234 @@ main {
         margin: 0;
     }
 } */
+
+
+
+
+/* comment */
+
+.heading {
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    padding: 1rem;
+    margin: 2rem 0;
+    background-color: rgba(255, 51, 153, .05);
+}
+
+.heading span {
+    color: var(--pink);
+}
+
+
+.review .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 0 5%;
+}
+
+.review .box-container .box {
+    flex: 1 1 30rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    padding: 3rem 5%;
+    position: relative;
+
+}
+
+.review .box-container .box .ti-pin-alt {
+    position: absolute;
+    bottom: 3rem;
+    right: 3rem;
+    font-size: 6rem;
+    color: #eee;
+}
+
+.review .box-container .box .ti-star {
+    color: palevioletred;
+    font-size: 2rem;
+}
+
+.review .box-container .box p {
+    color: #999;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding-top: 2rem;
+}
+
+.review .box-container .box .user {
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.review .box-container .box .user img {
+    height: 6rem;
+    width: 6rem;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.review .box-container .box .user h3 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.review .box-container .box .user span {
+    font-size: 1.5rem;
+    color: #999;
+}
+
+
+
+/* footer */
+footer {
+    grid-area: footer-cell;
+    height: auto;
+    margin-top: 200px;
+    background-color: #2d2e33;
+
+}
+
+.left {
+    padding: 20px;
+    float: left;
+    width: 30%; 
+    text-align: center;
+  }
+
+  .left p,b {
+    color: antiquewhite;
+  }
+
+  .left p i {
+    color: black;
+  }
+  
+  .main {
+    padding: 20px;
+    float: left;
+    width: 40%;
+    text-align: center;
+  }
+
+
+  .main ul {
+    font-size: 20px;
+  }
+
+  .main ul a {
+    text-decoration: none;
+    color: bisque;
+  }
+  
+  .right {
+    padding: 20px;
+    float: left;
+    width: 30%; 
+    text-align: center;
+  }
+  
+  .footer h4 {
+    position: relative;
+    display: inline-flex;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 27px;
+    color: aquamarine;
+    text-transform: capitalize;
+    text-align: center;
+
+}
+
+.left  h4::before {
+    content: '';
+    position: absolute;
+    left: 1;
+    bottom: -6px;
+    background-color: aliceblue;
+    height: 2px;
+    width: 110px;
+}
+
+.main  h4::before {
+    content: '';
+    position: absolute;
+    left: 1;
+    bottom: -6px;
+    background-color: aliceblue;
+    height: 2px;
+    width: 60px;
+}
+
+.right  h4::before {
+    content: '';
+    position: absolute;
+    left: 1;
+    bottom: -6px;
+    background-color: aliceblue;
+    height: 2px;
+    width: 180px;
+}
+
+li {
+    list-style: none;
+}
+
+.footer li ul{
+    padding: 10px;
+    font-weight: 600;
+}
+
+.footer p {
+    text-align: start;
+    padding: 5px;
+}
+
+
+.footer .icon {
+    display: inline-block;
+}
+
+.footer i {
+    padding:   5px;
+    text-align: left;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 35px;
+    font-size: 15px;
+    margin: 10px 15px;
+}
+
+.footer p {
+    text-align: center;
+}
+
+.footer p img {
+    padding: 10px 10px; 
+    font-size: 20px;    
+}
+
+  @media screen and (max-width: 1110px) {
+    .left, .main, .right {
+      width: 100%; 
+    }
+
+    .left p {
+        text-align: center;
+    }
+
+    .right p {
+        text-align: center;
+    }
+
+    .footer h4 {
+        font-size: 30px;
+    }
+
+    .footer {
+        font-size: 20px;
+    }
+  }
+
