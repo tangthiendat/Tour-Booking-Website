@@ -1,313 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product</title>
-    <link rel="stylesheet" href="./css/product.css">
-    <link rel="stylesheet" href="./font/themify-icons-font/themify-icons/themify-icons.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <input type="checkbox" name="" id="toggler" class="hidden" />
-            <label for="toggler" class="fa-solid fa-bars nav__toggle-icon hidden"></label>
-            <img class="nav__logo" src="./assets/img/logo.png" alt="logo" />
-            <ul class="nav__links">
-                <li><a class="active" href="#">Trang Chủ</a></li>
-                <li><a href="#">Tour Du Lịch</a></li>
-                <li><a href="#">Về Chúng Tôi</a></li>
-            </ul>
-            <a class="nav__btn-login" href="login.html">Đăng nhập</a>
-            <div class="nav__personal hidden">
-                <i class="fa fa-shopping-cart nav__cart-icon"></i>
-                <div class="nav__user">
-                    <i class="fa fa-user nav__user-icon"></i>
-                    <span class="nav__username">Tang Thien Dat &nbsp; <i class="fa fa-caret-down"></i></span>
-                    <div class="dropdown-menu hidden">
-                        <ul>
-                            <li><a href="#">Đổi mật khẩu</a></li>
-                            <li><a href="#">Đăng xuất</a></li>
-                        </ul>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Product</title>
+        <link rel="stylesheet" href="./css/product.css" />
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./font/themify-icons-font/themify-icons/themify-icons.css" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <input type="checkbox" name="" id="toggler" class="hidden" />
+                <label for="toggler" class="fa-solid fa-bars nav__toggle-icon hidden"></label>
+                <img class="nav__logo" src="./images/logo.png" alt="logo" />
+                <ul class="nav__links">
+                    <li><a class="active" href="#">Trang Chủ</a></li>
+                    <li><a href="#">Tour Du Lịch</a></li>
+                    <li><a href="#">Về Chúng Tôi</a></li>
+                </ul>
+                <a class="nav__btn-login" href="login.html">Đăng nhập</a>
+                <div class="nav__personal hidden">
+                    <i class="fa fa-shopping-cart nav__cart-icon"></i>
+                    <div class="nav__user">
+                        <i class="fa fa-user nav__user-icon"></i>
+                        <span class="nav__username">Tang Thien Dat &nbsp; <i class="fa fa-caret-down"></i></span>
+                        <div class="dropdown-menu hidden">
+                            <ul>
+                                <li><a href="#">Đổi mật khẩu</a></li>
+                                <li><a href="#">Đăng xuất</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+            </nav>
+        </header>
+        <script src="./js/index.js"></script>
+
+        <div class="places-list">
+            <div class="places-item">
+                <div class="places-img">
+                    <img src="./images/products/product-001.jpg" alt="" />
+                </div>
+
+                <div class="places-body">
+                    <p class="product-id" hidden>001</p>
+                    <h1>Mũi Né - Bình Thuận</h1>
+                    <p>
+                        Mũi Né là một địa danh, tên một mũi biển và cũng là một phường ở thành phố Phan Thiết, tỉnh Bình
+                        Thuận, Việt Nam. Đây là một khu du lịch nổi tiếng của tỉnh Bình Thuận và là một trong số các khu
+                        du lịch quốc gia của Việt Nam (tuy nhiên, thực tế đa phần các khu nghỉ mát lại tập trung nhiều ở
+                        phường Hàm Tiến, gần Mũi Né). Nằm trong vùng nhiệt đới, ít chịu ảnh hưởng của gió mùa Đông Bắc,
+                        khí hậu nóng và khô, có thể nói Mũi Né là nơi hấp dẫn khách du lịch cả 4 mùa trong năm. Ngoài
+                        ra, nơi đây còn hấp dẫn du khách bởi những loại hình du lịch trải nghiệm độc đáo, ấn tượng không
+                        thể quên trong hành trình.
+                    </p>
+                    <p><i class="box-animation">3 ngày 2 đêm chỉ từ:</i></p>
+                    <h3 class="price">2.700.000 vnđ</h3>
+                </div>
+
+                <div class="places-price">
+                    <form class="places-btn" action="/action_page.php">
+                        <label for="quantity">Số lượng:</label>
+                        <input class="value" type="number" id="quantity" name="quantity" min="0" max="100" />
+                        <input class="btn" type="submit" value="Đặt ngay" />
+                    </form>
+                </div>
             </div>
-        </nav>
-    </header>
-    <script src="./js/index.js"></script>
 
-    <div class="places-list">
-        <div class="places-item">
-            <div class="places-img">
-                <img src="./images/products/product-001.jpg" alt="">
+            <div class="places-item">
+                <div class="places-img">
+                    <img src="./images/products/product-002.jpg" alt="" />
+                </div>
+
+                <div class="places-body">
+                    <p class="product-id" hidden>002</p>
+                    <h1>Đồi Chè Cầu Đất - Đà Lạt</h1>
+                    <p>
+                        Đồi chè Cầu Đất là một điểm du lịch hấp dẫn của Đà Lạt, nơi thu hút du khách với những cánh đồng
+                        chè xanh mướt, trải dài tít tắp. Không gian yên bình và nên thơ tại đồi chè Cầu Đất Đà Lạt chắc
+                        chắn sẽ làm bạn xiêu lòng ngay từ lần đầu ghé thăm. Một trong những đặc điểm thu hút đông đảo
+                        khách tham quan đồi chè Cầu Đất chính là khung cảnh bao la, bạt ngàn phủ một màu xanh mát mắt.
+                        Với những ai yêu thích cảm giác hòa mình vào thiên nhiên và tận hưởng không khí yên bình thì đây
+                        ắt hẳn là một trải nghiệm lý tưởng.
+                    </p>
+                    <p><i class="box-animation">3 ngày 2 đêm chỉ từ:</i></p>
+                    <h3 class="price">3.500.000 vnđ</h3>
+                </div>
+
+                <div class="places-price">
+                    <form class="places-btn" action="/action_page.php">
+                        <label for="quantity">Số lượng:</label>
+                        <input class="value" type="number" id="quantity" name="quantity" min="0" max="100" />
+                        <input class="btn" type="submit" value="Đặt ngay" />
+                    </form>
+                </div>
             </div>
 
-            <div class="places-body">
-                <p class="product-id" hidden>001</p>
-                <h1>Mũi Né - Bình Thuận</h1>
-                <p>Mũi Né là một địa danh, tên một mũi biển và cũng là một phường ở thành phố Phan Thiết, tỉnh Bình Thuận, Việt Nam. Đây là một khu du lịch nổi tiếng của tỉnh Bình Thuận và là một trong số các khu du lịch quốc gia của Việt Nam (tuy nhiên, thực tế đa phần các khu nghỉ mát lại tập trung nhiều ở phường Hàm Tiến, gần Mũi Né). Nằm trong vùng nhiệt đới, ít chịu ảnh hưởng của gió mùa Đông Bắc, khí hậu nóng và khô, có thể nói Mũi Né là nơi hấp dẫn khách du lịch cả 4 mùa trong năm. Ngoài ra, nơi đây còn hấp dẫn du khách bởi những loại hình du lịch trải nghiệm độc đáo, ấn tượng không thể quên trong hành trình.</p>
-                <p><i class="box-animation">3 ngày 2 đêm chỉ từ:</i></p>
-                <h3 class="price">2.700.000 vnđ</h3>
-            </div>    
+            <div class="places-item">
+                <div class="places-img">
+                    <img src="./images/products/product-003.jpg" alt="" />
+                </div>
 
-            <div class="places-price">
-                <form class="places-btn" action="/action_page.php">
-                    <label for="quantity">Số lượng:</label>
-                    <input class="value" type="number" id="quantity" name="quantity" min="0" max="100">
-                    <input class="btn" type="submit" value="Đặt ngay">
-                </form>
+                <div class="places-body">
+                    <p class="product-id" hidden>003</p>
+                    <h1>Sapa - Lào Cai</h1>
+                    <p>
+                        Sapa là một địa điểm du lịch nổi tiếng thuộc tỉnh Lào Cai, nằm tại phía Bắc của nước ta. Nhờ
+                        được tạo hóa ưu ái mà thiên nhiên Sapa hiện lên như một bức tranh tiên cảnh đầy tráng lệ nhưng
+                        cũng không kém phần thơ mộng. Khí hậu Sapa quanh năm mát mẻ, nhiệt độ trung bình nằm trong
+                        khoảng từ 15 đến 18 độ C. Đặc biệt, đến mùa đông lạnh thì có những khi nhiệt độ giảm xuống dưới
+                        0 độ C và còn xuất hiện cả tuyết nữa.
+                    </p>
+                    <p><i class="box-animation">3 ngày 2 đêm chỉ từ:</i></p>
+                    <h3 class="price">7.500.000 vnđ</h3>
+                </div>
 
+                <div class="places-price">
+                    <form class="places-btn" action="/action_page.php">
+                        <label for="quantity">Số lượng:</label>
+                        <input class="value" type="number" id="quantity" name="quantity" min="0" max="100" />
+                        <input class="btn" type="submit" value="Đặt ngay" />
+                    </form>
+                </div>
             </div>
-            
+
+            <div class="places-item">
+                <div class="places-img">
+                    <img src="./images/products/product-004.jpg" alt="" />
+                </div>
+
+                <div class="places-body">
+                    <p class="product-id" hidden>004</p>
+                    <h1>Núi Bà Đen - Tây Ninh</h1>
+                    <p>
+                        Núi Bà Đen là ngọn núi lửa đã tắt nằm ở trung tâm tỉnh Tây Ninh, Việt Nam. Với độ cao 986 m, đây
+                        là ngọn núi cao nhất miền Nam Việt Nam hiện nay, được mệnh danh "Đệ nhất thiên sơn". Ở độ cao
+                        996 mét (3.268 ft), ngọn núi lửa đã tắt này mọc lên từ khu đất nông nghiệp bằng phẳng của vùng
+                        Đông Nam bộ. Ngọn núi gần như là một hình nón hoàn hảo và hơi phình ra ở phía Tây Bắc. Núi Bà
+                        Đen sở hữu nhiều hang động và được bao phủ bởi nhiều đá bazan lớn. Vị trí của ngọn núi nằm ở
+                        phía Đông Bắc thành phố Tây Ninh, thuộc địa phận xã Thạnh Tân và cách trung tâm thành phố 11 km;
+                        cách Thành phố Hồ Chí Minh 96 km về phía Tây Bắc.
+                    </p>
+                    <p><i class="box-animation">3 ngày 2 đêm chỉ từ:</i></p>
+                    <h3 class="price">5.000.000 vnđ</h3>
+                </div>
+
+                <div class="places-price">
+                    <form class="places-btn" action="/action_page.php">
+                        <label for="quantity">Số lượng:</label>
+                        <input class="value" type="number" id="quantity" name="quantity" min="0" max="100" />
+                        <input class="btn" type="submit" value="Đặt ngay" />
+                    </form>
+                </div>
+            </div>
+
+            <div class="places-item">
+                <div class="places-img">
+                    <img src="./images/products/product-005.jpg" alt="" />
+                </div>
+
+                <div class="places-body">
+                    <p class="product-id" hidden>005</p>
+                    <h1>Vịnh Hạ Long - Quảng Ninh</h1>
+                    <p>
+                        Vịnh Hạ Long là một vịnh nhỏ thuộc phần bờ tây vịnh Bắc Bộ tại khu vực biển Đông Bắc Việt Nam,
+                        bao gồm vùng biển đảo của thành phố Hạ Long thuộc tỉnh Quảng Ninh. Vịnh Hạ Long có quang cảnh
+                        thiên nhiên hùng vĩ, độc đáo với hình ảnh hàng trăm nghìn hòn đảo lớn nhỏ có hình thù khác nhau,
+                        thảm thực vật xanh mướt và nước biển trong vắt, êm đềm. Nhờ sở hữu vẻ đẹp thiên tạo tựa như
+                        tranh vẽ, vịnh Hạ Long đã được UNESCO công nhận là Di sản thiên nhiên Thế giới vào năm 1994 và
+                        năm 2000.
+                    </p>
+                    <p><i class="box-animation">3 ngày 2 đêm chỉ từ:</i></p>
+                    <h3 class="price">8.000.000 vnđ</h3>
+                </div>
+
+                <div class="places-price">
+                    <form class="places-btn" action="/action_page.php">
+                        <label for="quantity">Số lượng:</label>
+                        <input class="value" type="number" id="quantity" name="quantity" min="0" max="100" />
+                        <input class="btn" type="submit" value="Đặt ngay" />
+                    </form>
+                </div>
+            </div>
+            <div class="places-item">
+                <div class="places-img">
+                    <img src="./images/products/product-006.jpg" alt="" />
+                </div>
+
+                <div class="places-body">
+                    <p class="product-id" hidden>006</p>
+                    <h1>Hang Sơn Đoòng - Quảng Bình</h1>
+                    <p>
+                        Sơn Đoòng là hang động lớn nhất hành tinh và cũng là hang động hùng vĩ nhất tại Việt Nam. Hang
+                        Sơn Đoòng được ông một thợ rừng người Phong Nha phát hiện ra cửa hang vào năm 1990 và đến năm
+                        2009 thì được nhóm thám hiểm hang động Anh-Việt (The British Vietnam Caving Expedition Team) do
+                        ông Howard Limbert dẫn đầu vào thám hiểm, khảo sát và đo vẽ. Hang Sơn Đoòng được nhóm thám hiểm
+                        cùng với tạp chí National Geographic công bố là hang động đá vôi tự nhiên lớn nhất thế giới năm
+                        2009. Năm 2013, Hang Sơn Đoòng được tổ chức kỷ lục thế giới Guinness ghi nhận là hang động tự
+                        nhiên lớn nhất thế giới.
+                    </p>
+                    <p><i class="box-animation">3 ngày 2 đêm chỉ từ:</i></p>
+                    <h3 class="price">7.000.000 vnđ</h3>
+                </div>
+
+                <div class="places-price">
+                    <form class="places-btn" action="/action_page.php">
+                        <label for="quantity">Số lượng:</label>
+                        <input class="value" type="number" id="quantity" name="quantity" min="0" max="100" />
+                        <input class="btn" type="submit" value="Đặt ngay" />
+                    </form>
+                </div>
+            </div>
+
+            <div class="places-item">
+                <div class="places-img">
+                    <img src="./images/products/product-007.png" alt="" />
+                </div>
+
+                <div class="places-body">
+                    <p class="product-id" hidden>007</p>
+                    <h1>Phú Quốc - Kiên Giang</h1>
+                    <p>
+                        Phú Quốc là một thành phố đảo trực thuộc tỉnh Kiên Giang, Việt Nam. Đảo Phú Quốc cùng các đảo
+                        nhỏ lân cận và quần đảo Thổ Chu hợp lại tạo thành Thành phố Phú Quốc ở vịnh Thái Lan, đây là
+                        thành phố đảo đầu tiên được thành lập của Việt Nam. Vùng biển Phú Quốc có 22 hòn đảo lớn nhỏ,
+                        trong đó đảo Phú Quốc lớn nhất có diện tích 580 km², dài 49 km. Địa hình thoải chạy từ bắc xuống
+                        nam với 99 ngọn núi đồi. Tuy nhiên, cụm đảo nhỏ của cảng An Thới bị ngăn cách hẳn với phần mũi
+                        phía nam của đảo Phú Quốc bởi một eo biển có độ sâu tới hơn 60m.
+                    </p>
+                    <p><i class="box-animation">3 ngày 2 đêm chỉ từ:</i></p>
+                    <h3 class="price">5.000.000 vnđ</h3>
+                </div>
+
+                <div class="places-price">
+                    <form class="places-btn" action="/action_page.php">
+                        <label for="quantity">Số lượng:</label>
+                        <input class="value" type="number" id="quantity" name="quantity" min="0" max="100" />
+                        <input class="btn" type="submit" value="Đặt ngay" />
+                    </form>
+                </div>
+            </div>
+
+            <div class="places-item">
+                <div class="places-img">
+                    <img src="./images/products/product-008.jpg" alt="" />
+                </div>
+
+                <div class="places-body">
+                    <p class="product-id" hidden>008</p>
+                    <h1>Biển Nhũ Tiên - Nha Trang</h1>
+                    <p>
+                        Nhũ Tiên Nha Trang là bãi tắm cực kỳ xinh đẹp tại Khánh Hòa. Với làn nước xanh mát, bãi cát
+                        trắng phau và hàng dừa lao xao trong gió, bãi tắm Nhũ Tiên là nơi nghỉ dưỡng tuyệt vời cho gia
+                        đình, bạn bè và các cặp đôi. Đến với Nhũ Tiên, ngoài việc tận hưởng nghỉ dưỡng, bạn còn có thể
+                        thử sức với vô số các môn thể thao nước như lướt ván, dù lượn, mô tô nước… Đây chính là điểm đến
+                        lý tưởng để bạn bè hội họp, dã ngoại, tổ chức team building.
+                    </p>
+                    <p><i class="box-animation">3 ngày 2 đêm chỉ từ:</i></p>
+                    <h3 class="price">4.000.000 vnđ</h3>
+                </div>
+
+                <div class="places-price">
+                    <form class="places-btn" action="/action_page.php">
+                        <label for="quantity">Số lượng:</label>
+                        <input class="value" type="number" id="quantity" name="quantity" min="0" max="100" />
+                        <input class="btn" type="submit" value="Đặt ngay" />
+                    </form>
+                </div>
+            </div>
+
+            <div class="places-item">
+                <div class="places-img">
+                    <img src="./images/products/product-009.jpg" alt="" />
+                </div>
+
+                <div class="places-body">
+                    <p class="product-id" hidden>009</p>
+                    <h1>Núi Cấm - An Giang</h1>
+                    <p>
+                        Núi Cấm nằm trên địa bàn xã An Hảo,thị xã Tịnh Biên, cách trung tâm TP Long Xuyên khoảng 90 km
+                        theo Quốc lộ 91 rẽ qua tỉnh lộ 948, và cách thành phố Châu Đốc khoảng 37 km. Núi có độ cao 705
+                        m, chiếm chu vi 28.600 m,[2] đỉnh Bồ Hong trên núi Cấm là đỉnh núi cao nhất trong Thất Sơn và
+                        núi Cấm cũng là ngọn núi cao nhất Đồng Bằng Sông Cửu Long. Núi Cấm nơi du lịch nổi tiếng của
+                        tỉnh An Giang, vì núi có dáng vẻ hùng vĩ, khí hậu mát mẻ, phong cảnh đẹp và cây cối luôn xanh
+                        tươi. Trên núi có các danh lam và danh thắng như: Chùa Vạn Linh, chùa Phật Lớn, tượng Phật Di
+                        Lặc, hồ Thủy Liêm, v.v...
+                    </p>
+                    <p><i class="box-animation">3 ngày 2 đêm chỉ từ:</i></p>
+                    <h3 class="price">3.000.000 vnđ</h3>
+                </div>
+
+                <div class="places-price">
+                    <form class="places-btn" action="/action_page.php">
+                        <label for="quantity">Số lượng:</label>
+                        <input class="value" type="number" id="quantity" name="quantity" min="0" max="100" />
+                        <input class="btn" type="submit" value="Đặt ngay" />
+                    </form>
+                </div>
+            </div>
+
+            <div class="places-item">
+                <div class="places-img">
+                    <img src="./images/products/product-010.jpg" alt="" />
+                </div>
+
+                <div class="places-body">
+                    <p class="product-id" hidden>010</p>
+                    <h1>Hồ Hoàn Kiếm - Hà Nội</h1>
+                    <p>
+                        Hoàn Kiếm là hồ nước ngọt tự nhiên của thành phố Hà Nộ, kết nối các phố Hàng Ngang, Hàng Đào,
+                        Cầu Gỗ, Lương Văn Can, Lò Sũ... với khu phố Tây do người Pháp quy hoạch cách đây hơn một thế kỷ
+                        là Bảo Khánh, Nhà Thờ, Tràng Thi, Hàng Bài, Đinh Tiên Hoàng, Tràng Tiền...Nằm trên gò đất trung
+                        tâm hồ, Tháp Rùa là điểm nhấn thu hút nhất ở Hồ Gươm. Được xây dựng từ những năm 1884, với lối
+                        kiến trúc Pháp kết hợp với kiến trúc phong kiến cổ xưa của Việt Nam, Tháp Rùa nổi lên giữa hồ cổ
+                        kính, rêu phong và đầy trầm mặc.
+                    </p>
+                    <p><i class="box-animation">3 ngày 2 đêm chỉ từ:</i></p>
+                    <h3 class="price">4.500.000 vnđ</h3>
+                </div>
+
+                <div class="places-price">
+                    <form class="places-btn" action="/action_page.php">
+                        <label for="quantity"
+                            >Số lượng:
+                            <input class="value" type="number" id="quantity" name="quantity" min="0" max="100"
+                        /></label>
+                        <input class="btn" type="submit" value="Đặt ngay" />
+                    </form>
+                </div>
+            </div>
         </div>
 
-        <div class="places-item">
-            <div class="places-img">
-                <img src="./images/products/product-002.jpg" alt="">
+        <footer>
+            <div class="footer left">
+                <h4 class="title">Kết Nối</h4>
+                <p><b>Địa chỉ: </b>đường 3/2, phường An Khánh, Quận Ninh Kiều, TP.Cần Thơ</p>
+                <p><b>SĐT: </b>(+84) 234 434 33</p>
+                <p><b>Email: </b>Traveltour@gmail.com</p>
+                <p class="icon"><i class="ti-facebook"></i></p>
+                <p class="icon"><i class="ti-instagram"></i></p>
+                <p class="icon"><i class="ti-google"></i></p>
+                <p class="icon"><i class="ti-twitter"></i></p>
             </div>
 
-            <div class="places-body">
-                <p class="product-id" hidden>002</p>
-                <h1>Đồi Chè Cầu Đất - Đà Lạt</h1>
-                <p>Đồi chè Cầu Đất là một điểm du lịch hấp dẫn của Đà Lạt, nơi thu hút du khách với những cánh đồng chè xanh mướt, trải dài tít tắp. Không gian yên bình và nên thơ tại đồi chè Cầu Đất Đà Lạt chắc chắn sẽ làm bạn xiêu lòng ngay từ lần đầu ghé thăm. Một trong những đặc điểm thu hút đông đảo khách tham quan đồi chè Cầu Đất chính là khung cảnh bao la, bạt ngàn phủ một màu xanh mát mắt. Với những ai yêu thích cảm giác hòa mình vào thiên nhiên và tận hưởng không khí yên bình thì đây ắt hẳn là một trải nghiệm lý tưởng. </p>
-                <p><i class="box-animation">3 ngày 2 đêm chỉ từ:</i></p>
-                <h3 class="price">3.500.000 vnđ</h3>
-            </div>    
-
-            <div class="places-price">
-                <form class="places-btn" action="/action_page.php">
-                    <label for="quantity">Số lượng:</label>
-                    <input class="value" type="number" id="quantity" name="quantity" min="0" max="100">
-                    <input class="btn" type="submit" value="Đặt ngay">
-                </form>
-
-            </div>
-            
-        </div>
-
-        <div class="places-item">
-            <div class="places-img">
-                <img src="./images/products/product-003.jpg" alt="">
+            <div class="footer main">
+                <h4 class="title">Thông Tin</h4>
+                <li>
+                    <ul>
+                        <a href="product.html">Trang chủ</a>
+                    </ul>
+                    <ul>
+                        <a href="product.html">Tour list</a>
+                    </ul>
+                    <ul>
+                        <a href="#">Hỗ trợ</a>
+                    </ul>
+                    <ul>
+                        <a href="#">Khác</a>
+                    </ul>
+                </li>
             </div>
 
-            <div class="places-body">
-                <p class="product-id" hidden>003</p>
-                <h1>Sapa - Lào Cai</h1>
-                <p>Sapa là một địa điểm du lịch nổi tiếng thuộc tỉnh Lào Cai, nằm tại phía Bắc của nước ta. Nhờ được tạo hóa ưu ái mà thiên nhiên Sapa hiện lên như một bức tranh tiên cảnh đầy tráng lệ nhưng cũng không kém phần thơ mộng. Khí hậu Sapa quanh năm mát mẻ, nhiệt độ trung bình nằm trong khoảng từ 15 đến 18 độ C. Đặc biệt, đến mùa đông lạnh thì có những khi nhiệt độ giảm xuống dưới 0 độ C và còn xuất hiện cả tuyết nữa.</p>
-                <p><i class="box-animation">3 ngày 2 đêm chỉ từ:</i></p>
-                <h3 class="price">7.500.000 vnđ</h3>
-            </div>    
-
-            <div class="places-price">
-                <form class="places-btn" action="/action_page.php">
-                    <label for="quantity">Số lượng:</label>
-                    <input class="value" type="number" id="quantity" name="quantity" min="0" max="100">
-                    <input class="btn" type="submit" value="Đặt ngay">
-                </form>
-
+            <div class="footer right">
+                <h4 class="title">Phương Thức</h4>
+                <p>
+                    <img src="./images/card/cir.png" width="100" height="80" alt="" />
+                    <img src="./images/card/jcb.png" width="100" height="80" alt="" />
+                    <img src="./images/card/master.png" width="100" height="80" alt="" />
+                    <img src="./images/card/visa.png" width="100" height="80" alt="" />
+                    <img src="./images/card/amazon.png" width="100" height="80" alt="" />
+                    <img src="./images/card/apple.png" width="100" height="80" alt="" />
+                </p>
             </div>
-            
-        </div>
-
-        <div class="places-item">
-            <div class="places-img">
-                <img src="./images/products/product-004.jpg" alt="">
-            </div>
-
-            <div class="places-body">
-                <p class="product-id" hidden>004</p>
-                <h1>Núi Bà Đen - Tây Ninh</h1>
-                <p>Núi Bà Đen là ngọn núi lửa đã tắt nằm ở trung tâm tỉnh Tây Ninh, Việt Nam. Với độ cao 986 m, đây là ngọn núi cao nhất miền Nam Việt Nam hiện nay, được mệnh danh "Đệ nhất thiên sơn". Ở độ cao 996 mét (3.268 ft), ngọn núi lửa đã tắt này mọc lên từ khu đất nông nghiệp bằng phẳng của vùng Đông Nam bộ. Ngọn núi gần như là một hình nón hoàn hảo và hơi phình ra ở phía Tây Bắc. Núi Bà Đen sở hữu nhiều hang động và được bao phủ bởi nhiều đá bazan lớn. Vị trí của ngọn núi nằm ở phía Đông Bắc thành phố Tây Ninh, thuộc địa phận xã Thạnh Tân và cách trung tâm thành phố 11 km; cách Thành phố Hồ Chí Minh 96 km về phía Tây Bắc.</p>
-                <p><i class="box-animation">3 ngày 2 đêm chỉ từ:</i></p>
-                <h3 class="price">5.000.000 vnđ</h3>
-            </div>    
-
-            <div class="places-price">
-                <form class="places-btn" action="/action_page.php">
-                    <label for="quantity">Số lượng:</label>
-                    <input class="value" type="number" id="quantity" name="quantity" min="0" max="100">
-                    <input class="btn" type="submit" value="Đặt ngay">
-                </form>
-                
-            </div>
-            
-        </div>
-
-        <div class="places-item">
-            <div class="places-img">
-                <img src="./images/products/product-005.jpg" alt="">
-            </div>
-
-            <div class="places-body">
-                <p class="product-id" hidden>005</p>
-                <h1>Vịnh Hạ Long - Quảng Ninh</h1>
-                <p>Vịnh Hạ Long là một vịnh nhỏ thuộc phần bờ tây vịnh Bắc Bộ tại khu vực biển Đông Bắc Việt Nam, bao gồm vùng biển đảo của thành phố Hạ Long thuộc tỉnh Quảng Ninh. Vịnh Hạ Long có quang cảnh thiên nhiên hùng vĩ, độc đáo với hình ảnh hàng trăm nghìn hòn đảo lớn nhỏ có hình thù khác nhau, thảm thực vật xanh mướt và nước biển trong vắt, êm đềm. Nhờ sở hữu vẻ đẹp thiên tạo tựa như tranh vẽ, vịnh Hạ Long đã được UNESCO công nhận là Di sản thiên nhiên Thế giới vào năm 1994 và năm 2000.</p>
-                <p><i class="box-animation">3 ngày 2 đêm chỉ từ:</i></p>
-                <h3 class="price">8.000.000 vnđ</h3>
-            </div>    
-
-            <div class="places-price">
-                <form class="places-btn" action="/action_page.php">
-                    <label for="quantity">Số lượng:</label>
-                    <input class="value" type="number" id="quantity" name="quantity" min="0" max="100">
-                    <input class="btn" type="submit" value="Đặt ngay">
-                </form>
-
-            </div>
-            
-        </div>
-        <div class="places-item">
-            <div class="places-img">
-                <img src="./images/products/product-006.jpg" alt="">
-            </div>
-
-            <div class="places-body">
-                <p class="product-id" hidden>006</p>
-                <h1>Hang Sơn Đoòng - Quảng Bình</h1>
-                <p>Sơn Đoòng là hang động lớn nhất hành tinh và cũng là hang động hùng vĩ nhất tại Việt Nam. Hang Sơn Đoòng được ông một thợ rừng người Phong Nha phát hiện ra cửa hang vào năm 1990 và đến năm 2009 thì được nhóm thám hiểm hang động Anh-Việt (The British Vietnam Caving Expedition Team) do ông Howard Limbert dẫn đầu vào thám hiểm, khảo sát và đo vẽ. Hang Sơn Đoòng được nhóm thám hiểm cùng với tạp chí National Geographic công bố là hang động đá vôi tự nhiên lớn nhất thế giới năm 2009. Năm 2013, Hang Sơn Đoòng được tổ chức kỷ lục thế giới Guinness ghi nhận là hang động tự nhiên lớn nhất thế giới.</p>
-                <p><i class="box-animation">3 ngày 2 đêm chỉ từ:</i></p>
-                <h3 class="price">7.000.000 vnđ</h3>
-            </div>    
-
-            <div class="places-price">
-                <form class="places-btn" action="/action_page.php">
-                    <label for="quantity">Số lượng:</label>
-                    <input class="value" type="number" id="quantity" name="quantity" min="0" max="100">
-                    <input class="btn" type="submit" value="Đặt ngay">
-                </form>
-
-            </div>
-            
-        </div>
-
-        <div class="places-item">
-            <div class="places-img">
-                <img src="./images/products/product-007.png" alt="">
-            </div>
-
-            <div class="places-body">
-                <p class="product-id" hidden>007</p>
-                <h1>Phú Quốc - Kiên Giang</h1>
-                <p>Phú Quốc là một thành phố đảo trực thuộc tỉnh Kiên Giang, Việt Nam. Đảo Phú Quốc cùng các đảo nhỏ lân cận và quần đảo Thổ Chu hợp lại tạo thành Thành phố Phú Quốc ở vịnh Thái Lan, đây là thành phố đảo đầu tiên được thành lập của Việt Nam. Vùng biển Phú Quốc có 22 hòn đảo lớn nhỏ, trong đó đảo Phú Quốc lớn nhất có diện tích 580 km², dài 49 km. Địa hình thoải chạy từ bắc xuống nam với 99 ngọn núi đồi. Tuy nhiên, cụm đảo nhỏ của cảng An Thới bị ngăn cách hẳn với phần mũi phía nam của đảo Phú Quốc bởi một eo biển có độ sâu tới hơn 60m.</p>
-                <p><i class="box-animation">3 ngày 2 đêm chỉ từ:</i></p>
-                <h3 class="price">5.000.000 vnđ</h3>
-            </div>    
-
-            <div class="places-price">
-                <form class="places-btn" action="/action_page.php">
-                    <label for="quantity">Số lượng:</label>
-                    <input class="value" type="number" id="quantity" name="quantity" min="0" max="100">
-                    <input class="btn" type="submit" value="Đặt ngay">
-                </form>
-
-            </div>
-            
-        </div>
-
-        <div class="places-item">
-            <div class="places-img">
-                <img src="./images/products/product-008.jpg" alt="">
-            </div>
-
-            <div class="places-body">
-                <p class="product-id" hidden>008</p>
-                <h1>Biển Nhũ Tiên - Nha Trang</h1>
-                <p>Nhũ Tiên Nha Trang là bãi tắm cực kỳ xinh đẹp tại Khánh Hòa. Với làn nước xanh mát, bãi cát trắng phau và hàng dừa lao xao trong gió, bãi tắm Nhũ Tiên là nơi nghỉ dưỡng tuyệt vời cho gia đình, bạn bè và các cặp đôi. Đến với Nhũ Tiên, ngoài việc tận hưởng nghỉ dưỡng, bạn còn có thể thử sức với vô số các môn thể thao nước như lướt ván, dù lượn, mô tô nước… Đây chính là điểm đến lý tưởng để bạn bè hội họp, dã ngoại, tổ chức team building.</p>
-                <p><i class="box-animation">3 ngày 2 đêm chỉ từ:</i></p>
-                <h3 class="price">4.000.000 vnđ</h3>
-            </div>    
-
-            <div class="places-price">
-                <form class="places-btn" action="/action_page.php">
-                    <label for="quantity">Số lượng:</label>
-                    <input class="value" type="number" id="quantity" name="quantity" min="0" max="100">
-                    <input class="btn" type="submit" value="Đặt ngay">
-                </form>
-
-            </div>
-            
-        </div>
-
-        <div class="places-item">
-            <div class="places-img">
-                <img src="./images/products/product-009.jpg" alt="">
-            </div>
-
-            <div class="places-body">
-                <p class="product-id" hidden>009</p>
-                <h1>Núi Cấm - An Giang</h1>
-                <p>Núi Cấm nằm trên địa bàn xã An Hảo,thị xã Tịnh Biên, cách trung tâm TP Long Xuyên khoảng 90 km theo Quốc lộ 91 rẽ qua tỉnh lộ 948, và cách thành phố Châu Đốc khoảng 37 km. Núi có độ cao 705 m, chiếm chu vi 28.600 m,[2] đỉnh Bồ Hong trên núi Cấm là đỉnh núi cao nhất trong Thất Sơn và núi Cấm cũng là ngọn núi cao nhất Đồng Bằng Sông Cửu Long. Núi Cấm nơi du lịch nổi tiếng của tỉnh An Giang, vì núi có dáng vẻ hùng vĩ, khí hậu mát mẻ, phong cảnh đẹp và cây cối luôn xanh tươi. Trên núi có các danh lam và danh thắng như: Chùa Vạn Linh, chùa Phật Lớn, tượng Phật Di Lặc, hồ Thủy Liêm, v.v...</p>
-                <p><i class="box-animation">3 ngày 2 đêm chỉ từ:</i></p>
-                <h3 class="price">3.000.000 vnđ</h3>
-            </div>    
-
-            <div class="places-price">
-                <form class="places-btn" action="/action_page.php">
-                    <label for="quantity">Số lượng:</label>
-                    <input class="value" type="number" id="quantity" name="quantity" min="0" max="100">
-                    <input class="btn" type="submit" value="Đặt ngay">
-                </form>
-
-            </div>
-            
-        </div>
-
-        <div class="places-item">
-            <div class="places-img">
-                <img src="./images/products/product-010.jpg" alt="">
-            </div>
-
-            <div class="places-body">
-                <p class="product-id" hidden>010</p>
-                <h1>Hồ Hoàn Kiếm - Hà Nội</h1>
-                <p>Hoàn Kiếm là hồ nước ngọt tự nhiên của thành phố Hà Nộ, kết nối các phố Hàng Ngang, Hàng Đào, Cầu Gỗ, Lương Văn Can, Lò Sũ... với khu phố Tây do người Pháp quy hoạch cách đây hơn một thế kỷ là Bảo Khánh, Nhà Thờ, Tràng Thi, Hàng Bài, Đinh Tiên Hoàng, Tràng Tiền...Nằm trên gò đất trung tâm hồ, Tháp Rùa là điểm nhấn thu hút nhất ở Hồ Gươm. Được xây dựng từ những năm 1884, với lối kiến trúc Pháp kết hợp với kiến trúc phong kiến cổ xưa của Việt Nam, Tháp Rùa nổi lên giữa hồ cổ kính, rêu phong và đầy trầm mặc. </p>
-                <p><i class="box-animation">3 ngày 2 đêm chỉ từ:</i></p>
-                <h3 class="price">4.500.000 vnđ</h3>
-            </div>    
-
-            <div class="places-price">
-                <form class="places-btn" action="/action_page.php">
-                    <label for="quantity">Số lượng: <input class="value" type="number" id="quantity" name="quantity" min="0" max="100"></label>
-                    <input class="btn" type="submit" value="Đặt ngay">
-                </form>
-
-            </div>
-            
-        </div>
-    </div>
-
-    <footer>
-        <div class="footer left">
-            <h4 class="title">Kết Nối</h4>
-            <p><b>Địa chỉ: </b>đường 3/2, phường An Khánh, Quận Ninh Kiều, TP.Cần Thơ</p>
-            <p><b>SĐT: </b>(+84) 234 434 33</p>
-            <p><b>Email: </b>Traveltour@gmail.com</p>
-            <p class="icon"><i class="ti-facebook"></i></p>
-            <p class="icon"><i class="ti-instagram"></i></p>
-            <p class="icon"><i class="ti-google"></i></p>
-            <p class="icon"><i class="ti-twitter"></i></p>
-        </div>
-
-        <div class="footer main">
-            <h4 class="title">Thông Tin</h4>
-            <li>
-                <ul><a href="product.html">Trang chủ</a></ul>
-                <ul><a href="product.html">Tour list</a></ul>
-                <ul><a href="#">Hỗ trợ</a></ul> 
-                <ul><a href="#">Khác</a></ul>
-            </li>
-        </div>
-
-        <div class="footer right">
-            <h4 class="title">Phương Thức</h4>
-            <p><img src="./images/card/cir.png" width="100" height="80" alt="">
-                <img src="./images/card/jcb.png" width="100" height="80" alt="">
-                <img src="./images/card/master.png" width="100" height="80" alt="">
-                <img src="./images/card/visa.png" width="100" height="80" alt="">
-                <img src="./images/card/amazon.png" width="100" height="80" alt="">
-                <img src="./images/card/apple.png" width="100" height="80" alt=""></p>
-        </div>
-    </footer>
-
-</body>
+        </footer>
+    </body>
 </html>
