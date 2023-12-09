@@ -1,47 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/c9f5871d83.js" crossorigin="anonymous"></script>
-    <title>Đăng Ký</title>
-    <link rel="stylesheet" href="./css/register.css">
-</head>
-<body>
-    <main class="form">
-        <div class="form-box">
-            <div class="form-value">
-                <form onsubmit="signUp()">
-                    <h2 class="title">Đăng Ký</h2>
-                    <div class="inputbox">
-                        <i class="fa-solid fa-user"></i>
-                        <input id="username" type="text" autocomplete="off" required>
-                        <label for="username">Họ và tên </label>
-                    </div>
-                    <div class="inputbox">
-                        <i class="fa-solid fa-envelope"></i>
-                        <input id="email" type="email" autocomplete="off" required>
-                        <label for="email">Email</label>
-                    </div>
-                    <div class="inputbox">
-                        <i class="fa-solid fa-lock"></i>
-                        <input id="password" type="password" autocomplete="off" required>
-                        <label for="password">Mật khẩu</label>
-                    </div>
-                    <div class="inputbox">
-                        <i class="fa-sharp fa-solid fa-key"></i>
-                        <input id="confirm-password" type="password" autocomplete="off" required>
-                        <label for="confirm-password">Xác nhận mật khẩu</label>
-                    </div>
-                    <div class="checkbox">
-                        <input id="checkbox" type="checkbox" class="check">
-                        <label for="checkbox"> Tôi đồng ý với các điều khoản </label>
-                    </div>
-                    <button class="btn">Đăng ký</button>
-                </form>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://kit.fontawesome.com/c9f5871d83.js" crossorigin="anonymous"></script>
+        <title>Đăng Ký</title>
+        <link rel="stylesheet" href="./css/register.css" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <img class="nav__logo" src="images/logo.png" alt="logo" />
+                <a class="nav__btn-login" href="#">Hỗ trợ</a>
+            </nav>
+        </header>
+        <main class="form">
+            <div class="form-box">
+                <div class="form-value">
+                    <form id="register-form">
+                        <h2 class="title">Đăng Ký</h2>
+                        <div class="inputbox">
+                            <i class="fa-solid fa-user"></i>
+                            <input id="username" type="text" autocomplete="off" required />
+                            <label for="username">Họ và tên </label>
+                        </div>
+                        <div class="inputbox">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input id="email" type="email" autocomplete="off" required />
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="inputbox">
+                            <i class="fa-solid fa-eye show-password"></i>
+                            <input id="password" type="password" autocomplete="off" required />
+                            <label for="password">Mật khẩu</label>
+                        </div>
+                        <div class="inputbox">
+                            <i class="fa-solid fa-eye show-confirm-password"></i>
+                            <input id="confirm-password" type="password" autocomplete="off" required />
+                            <label for="confirm-password">Xác nhận mật khẩu</label>
+                        </div>
+                        <div class="checkbox">
+                            <input id="agree" type="checkbox" class="check" />
+                            <label for="agree"> Tôi đồng ý với các điều khoản và điều kiện</label>
+                        </div>
+                        <button class="btn">Đăng ký</button>
+                    </form>
+                </div>
             </div>
-        </div>
-    </main>
-    <script src="/js/main.js"></script>
-</body>
+        </main>
+        <script src="/js/register.js"></script>
+    </body>
 </html>

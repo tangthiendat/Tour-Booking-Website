@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đăng Nhập</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
-    <link rel="stylesheet" href="/css/login.css">
-</head>
-<body>
-    <main class="form">
-            <form onsubmit="login()">
-                <img src="/images/banner-login.jpg" width="700px" height="500px" alt="">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Đăng Nhập</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+        <link rel="stylesheet" href="/css/login.css" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <img class="nav__logo" src="images/logo.png" alt="logo" />
+                <a class="nav__btn-login" href="#">Hỗ trợ</a>
+            </nav>
+        </header>
+        <main class="form">
+            <form id="login-form">
+                <img src="/images/login/banner-login.jpg" width="700px" height="500px" alt="" />
                 <div class="form-box">
-                    <h2 class="title">Đăng Nhập </h2>
+                    <h2 class="title">Đăng Nhập</h2>
                     <div class="inputbox">
                         <i class="fa-solid fa-envelope"></i>
-                        <input id="email" type="email" required autocomplete="off">
+                        <input id="email" type="email" required autocomplete="off" />
                         <label for="email">Email</label>
                     </div>
                     <div class="inputbox">
-                        <i class="fa-solid fa-lock"></i>
-                        <input id="password" type="password" required>
+                        <i class="fa-solid fa-eye show-password"></i>
+                        <input id="password" type="password" required />
                         <label for="password">Mật khẩu</label>
                     </div>
                     <div class="forget">
                         <label for="checkbox">
-                            <input id="checkbox" type="checkbox">Ghi nhớ tôi
+                            <input id="checkbox" type="checkbox" />Ghi nhớ tôi
                             <a href="#">Quên mật khẩu?</a>
                         </label>
                     </div>
@@ -33,27 +39,26 @@
                     <div class="register">
                         <p>
                             <span>Chưa có tài khoản?</span>
-                            <a href="#">  Đăng ký tại đây!</a>
+                            <a href="register.html"> Đăng ký tại đây!</a>
                         </p>
                     </div>
                 </div>
             </form>
-        </div>
-        <div class="form__content-detail">
-            <div class="icon">
-                <p>Cám ơn khách hàng đã đăng kí. Để biết nhiều thông tin hơn, hãy ghé qua các trang sau.</p>
-                <a href="#">
-                    <i class="fa-brands fa-facebook"></i>
-                </a>
-                <a href="#">
-                    <i class="fa-brands fa-youtube"></i>
-                </a>
-                <a href="#">
-                    <i class="fa-brands fa-instagram"></i>    
-                </a>
+            <div class="form__content-detail">
+                <div class="icon">
+                    <p>Cám ơn khách hàng đã đăng kí. Để biết nhiều thông tin hơn, hãy ghé qua các trang sau.</p>
+                    <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
             </div>
-        </div> 
-    </main>
-    <script src="/js/main.js"></script>
-</body>
+        </main>
+        <script src="js/login.js"></script>
+    </body>
 </html>

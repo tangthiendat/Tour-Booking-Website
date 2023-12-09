@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'poppins', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 body {
     height: 100vh;
@@ -12,21 +12,69 @@ header {
     min-height: 10%;
     box-sizing: border-box;
     border: 1px solid #000;
-    background-color: rgba(0, 0 , 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Phần navbar */
-.navbar {
-    background-color: rgba(0, 0 , 0, 0.8);
-}
-.nav-link {
-    color: #fff
-}
-.nav-link:hover {
-    color: aqua;
+header {
+    grid-area: header-cell;
 }
 
+nav {
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5%;
+    height: 8vh;
+}
 
+.nav__logo {
+    margin-top: 0;
+    width: 140px;
+    cursor: pointer;
+}
+
+.nav__links li {
+    list-style: none;
+    display: inline-block;
+}
+
+.nav__links {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav__links a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0.5rem 0.5rem;
+}
+
+.nav__links a:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+.nav__links a.active {
+    color: #000;
+    background-color: #fff;
+}
+
+.nav__btn-login,
+.nav__btn-signup {
+    margin: 0px 10px;
+    padding: 8px 12px;
+    text-decoration: none;
+}
+
+.nav__btn-login {
+    background-color: #fff;
+    color: #000;
+    border-radius: 20px;
+    border: 2px solid #fff;
+}
 
 /*  Phần form */
 .form {
@@ -34,9 +82,9 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: 100%;   
+    min-height: 100%;
     width: 100%;
-    background: url(/images/background-signup.jpg)no-repeat;
+    background: url(/images/register/background-signup.jpg) no-repeat;
     background-position: center;
     background-size: cover;
 }
@@ -45,7 +93,7 @@ header {
     position: relative;
     width: 500px;
     height: 600px;
-    border: 2px solid rgba(255,255,255,0.5);
+    border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 20px;
     backdrop-filter: blur(5px);
     display: flex;
@@ -71,18 +119,13 @@ header {
 
 .inputbox label {
     position: absolute;
-    top: 50%;
+    top: -5px;
     left: 5px;
     transform: translateY(-50%);
     color: #fff;
     font-size: 1em;
     pointer-events: none;
-    transition: 0.5s;
-}
-
-input:focus ~ label,
-input:valid ~ label {
-    top: -5px;
+    /* transition: 0.5s; */
 }
 
 .inputbox input {
@@ -102,6 +145,11 @@ input:valid ~ label {
     color: #fff;
     font-size: 1.2em;
     top: 20px;
+}
+
+.inputbox i.show-password,
+.inputbox i.show-confirm-password {
+    cursor: pointer;
 }
 
 .forget {
@@ -140,7 +188,7 @@ button {
 }
 
 .register {
-    font-size: .9em;
+    font-size: 0.9em;
     color: #fff;
     text-align: center;
     margin: 25px 0 10px;
@@ -156,7 +204,7 @@ button {
     text-decoration: underline;
 }
 
-input[type=checkbox] {
+input[type="checkbox"] {
     transform: scale(1.1);
     margin-right: 10px;
 }
