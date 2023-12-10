@@ -24,19 +24,19 @@
                     <li><a class="active" href="product.html">Tour Du Lịch</a></li>
                     <li><a href="#">Về Chúng Tôi</a></li>
                 </ul>
-                <a class="nav__btn-login hidden" href="login.html">Đăng nhập</a>
-                <div class="nav__personal">
+                <a class="nav__btn-login" href="login.html">Đăng nhập</a>
+                <div class="nav__personal hidden">
                     <div class="nav__shopping">
                         <p class="item-quantity hidden">0</p>
                         <i class="fa fa-shopping-cart nav__cart-icon"></i>
                     </div>
                     <div class="nav__user">
                         <i class="fa fa-user nav__user-icon"></i>
-                        <span class="nav__username">Tang Thien Dat &nbsp; <i class="fa fa-caret-down"></i></span>
+                        <span class="nav__username">Username &nbsp; <i class="fa fa-caret-down"></i></span>
                         <div class="dropdown-menu hidden">
                             <ul>
                                 <li><a href="#">Đổi mật khẩu</a></li>
-                                <li><a href="#">Đăng xuất</a></li>
+                                <li><a class="nav__btn-logout" href="#">Đăng xuất</a></li>
                             </ul>
                         </div>
                     </div>
@@ -362,7 +362,26 @@
                     currency: "VND",
                 });
             });
-            window.onload = loadShoppingCart;
+
+            window.onload = function () {
+                loadShoppingCart();
+                if (localStorage.getItem("loggedInUser")) {
+                    const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+                    console.log(loggedInUser);
+                    document.querySelector(
+                        ".nav__username"
+                    ).innerHTML = `${loggedInUser.username} &nbsp; <i class="fa fa-caret-down"></i>`;
+                    const btnLogIn = document.querySelector(".nav__btn-login");
+                    const navPersonal = document.querySelector(".nav__personal");
+                    if (btnLogIn) {
+                        btnLogIn.classList.add("hidden");
+                        navPersonal.classList.remove("hidden");
+                    } else {
+                        btnLogIn.classList.remove("hidden");
+                        navPersonal.classList.add("hidden");
+                    }
+                }
+            };
         </script>
     </body>
 </html>

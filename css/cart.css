@@ -115,12 +115,12 @@ main {
     font-weight: bold;
     width: 50%;
     margin: 20px auto;
-    background-color: #e65100;
+    background-color: #512da8;
     color: #fff;
 }
 
 .payment .btn-pay:hover {
-    background-color: #ef6c00;
+    background-color: #7e57c2;
 }
 
 /* FOOTER */

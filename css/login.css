@@ -31,41 +31,10 @@ nav {
     cursor: pointer;
 }
 
-.nav__links li {
-    list-style: none;
-    display: inline-block;
-}
-
-.nav__links {
-    display: flex;
-    gap: 1rem;
-}
-
-.nav__links a {
-    text-decoration: none;
-    color: #fff;
-    text-transform: uppercase;
-    padding: 0.5rem 0.5rem;
-}
-
-.nav__links a:hover {
-    color: #000;
-    background-color: #fff;
-}
-
-.nav__links a.active {
-    color: #000;
-    background-color: #fff;
-}
-
-.nav__btn-login,
-.nav__btn-signup {
+.nav__btn-support {
     margin: 0px 10px;
     padding: 8px 12px;
     text-decoration: none;
-}
-
-.nav__btn-login {
     background-color: #fff;
     color: #000;
     border-radius: 20px;

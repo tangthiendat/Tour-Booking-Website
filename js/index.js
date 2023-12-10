@@ -9,3 +9,12 @@ const toggleDropdownMenu = function () {
 };
 
 userInfo.addEventListener("click", toggleDropdownMenu);
+
+document.querySelector(".nav__btn-logout").addEventListener("click", function () {
+    localStorage.removeItem("loggedInUser");
+    window.location.reload();
+});
+
+document.querySelector(".nav__logo").addEventListener("click", function () {
+    window.location.href = "index.html";
+});

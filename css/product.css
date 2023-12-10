@@ -69,6 +69,10 @@ nav {
     border: 2px solid #fff;
 }
 
+.nav__btn-login.hidden {
+    display: none;
+}
+
 .nav__shopping {
     position: relative;
 }
@@ -87,7 +91,6 @@ nav {
 
 .nav__personal {
     display: flex;
-    gap: 0.5rem;
 }
 
 .nav__personal.hidden {
@@ -110,11 +113,10 @@ nav {
 }
 
 .dropdown-menu {
-    /* display: block; */
     position: absolute;
     right: 5%;
     top: calc(10vh - 10px);
-    background-color: #000;
+    background-color: #262626;
     z-index: 10;
 }
 
@@ -131,8 +133,8 @@ nav {
 }
 
 .dropdown-menu ul a:hover {
-    background-color: #fff;
-    color: #000;
+    background-color: #676767;
+    color: #fff;
 }
 
 @media (max-width: 992px) {

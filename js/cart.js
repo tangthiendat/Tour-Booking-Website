@@ -24,35 +24,39 @@ const loadShoppingCart = function () {
         const itemInfo = linkClicked.parentElement.previousElementSibling;
 
         if (typeof Storage !== undefined) {
-            const quantityInput = linkClicked.previousElementSibling;
-            if (quantityInput.value) {
-                let newItem = {
-                    id: itemInfo.children[0].textContent,
-                    name: itemInfo.children[1].textContent,
-                    price: itemInfo.children[4].textContent,
-                    quantity: quantityInput.valueAsNumber,
-                };
-                //Kt cartItems co trong local storage chua => chua co thi tao moi
-                if (JSON.parse(localStorage.getItem("cartItems")) === null) {
-                    updatedCart.push(newItem);
-                    localStorage.setItem("cartItems", JSON.stringify(updatedCart));
+            if (localStorage.getItem("loggedInUser")) {
+                const quantityInput = linkClicked.previousElementSibling;
+                if (quantityInput.value) {
+                    let newItem = {
+                        id: itemInfo.children[0].textContent,
+                        name: itemInfo.children[1].textContent,
+                        price: itemInfo.children[4].textContent,
+                        quantity: quantityInput.valueAsNumber,
+                    };
+                    //Kt cartItems co trong local storage chua => chua co thi tao moi
+                    if (JSON.parse(localStorage.getItem("cartItems")) === null) {
+                        updatedCart.push(newItem);
+                        localStorage.setItem("cartItems", JSON.stringify(updatedCart));
+                        window.location.reload();
+                    } else {
+                        const updatedCart = JSON.parse(localStorage.getItem("cartItems"));
+                        const index = isExistedInCart(newItem, updatedCart);
+                        //Sp ton tai trong cart => update so luong
+                        if (index >= 0) {
+                            console.log(updatedCart[index]);
+                            updatedCart[index].quantity += quantityInput.valueAsNumber;
+                        } else {
+                            updatedCart.push(newItem);
+                        }
+                        localStorage.setItem("cartItems", JSON.stringify(updatedCart));
+                    }
+                    alert("Thêm vào giỏ hàng thành công");
                     window.location.reload();
                 } else {
-                    const updatedCart = JSON.parse(localStorage.getItem("cartItems"));
-                    const index = isExistedInCart(newItem, updatedCart);
-                    //Sp ton tai trong cart => update so luong
-                    if (index >= 0) {
-                        console.log(updatedCart[index]);
-                        updatedCart[index].quantity += quantityInput.valueAsNumber;
-                    } else {
-                        updatedCart.push(newItem);
-                    }
-                    localStorage.setItem("cartItems", JSON.stringify(updatedCart));
+                    alert("Vui lòng chọn số lượng vé trước khi đặt");
                 }
-                alert("Thêm vào giỏ hàng thành công");
-                window.location.reload();
             } else {
-                alert("Vui lòng chọn số lượng vé trước khi đặt");
+                alert("Bạn cần đăng nhập để đặt tour du lịch.");
             }
         } else {
             alert("Local storage is not working on your browser");
@@ -65,7 +69,11 @@ const loadShoppingCart = function () {
 
     const navShopping = document.querySelector(".nav__shopping");
     navShopping.addEventListener("click", function () {
-        window.location.href = "cart.html";
+        if (localStorage.cartItems === undefined) {
+            alert("Giỏ hàng trống. Hãy về trang tour du lịch để đặt vé.");
+        } else {
+            window.location.href = "cart.html";
+        }
     });
 
     if (localStorage.cartItems != undefined) {
