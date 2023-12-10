@@ -122,7 +122,6 @@ const showCart = function () {
         } else {
             document.querySelector(".payment").style.visibility = "visible";
             customerCart.forEach((item) => {
-                console.log(item);
                 subTotal = Number(item.quantity) * Number(item.price.replace(/\D/g, ""));
                 total += subTotal;
 

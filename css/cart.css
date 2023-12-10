@@ -58,7 +58,7 @@ main {
 
 .place-info {
     width: 70%;
-    padding: 10px 15px;
+    padding: 10px;
     position: relative;
 }
 
@@ -123,6 +123,53 @@ main {
     background-color: #7e57c2;
 }
 
+@media screen and (max-width: 1170px) {
+    main {
+        flex-direction: column;
+    }
+
+    .payment,
+    .cart {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .place-info .place-name,
+    .payment-info {
+        font-size: 1rem;
+    }
+
+    .place-info .total,
+    .place-info .icon-delete {
+        font-size: 1.25rem;
+    }
+
+    .place-info .place-name {
+        margin-bottom: 10px;
+    }
+
+    .place-info .total {
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .place-info .icon-delete {
+        top: 10px;
+        right: 10px;
+    }
+
+    .payment {
+        height: 16rem;
+    }
+
+    .payment-info .btn-pay {
+        margin: 10px auto;
+        font-size: 0.8rem;
+    }
+}
+
 /* FOOTER */
 footer {
     grid-area: footer-cell;
@@ -135,7 +182,7 @@ footer {
 
 .footer-content {
     padding: 20px;
-    width: 50%;
+    width: 60%;
     text-align: center;
 }
 
