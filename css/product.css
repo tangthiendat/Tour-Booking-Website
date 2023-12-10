@@ -1,0 +1,410 @@
+body {
+    display: grid;
+    grid-template-areas:
+        "header-cell"
+        "main-cell"
+        "footer-cell";
+    background-color: #f2f2f2;
+}
+
+.hidden {
+    display: none;
+}
+
+/* header  */
+
+header {
+    grid-area: header-cell;
+}
+
+nav {
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 5%;
+    height: 10vh;
+}
+
+.nav__logo {
+    width: 140px;
+    cursor: pointer;
+}
+
+.nav__links li {
+    list-style: none;
+    display: inline-block;
+}
+
+.nav__links {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav__links a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0.5rem 0.5rem;
+}
+
+.nav__links a:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+.nav__links a.active {
+    color: #000;
+    background-color: #fff;
+}
+
+.nav__btn-login {
+    margin: 0px 10px;
+    padding: 8px 16px;
+    text-decoration: none;
+    background-color: #fff;
+    color: #000;
+    border-radius: 20px;
+    border: 2px solid #fff;
+}
+
+.nav__shopping {
+    position: relative;
+}
+
+.nav__shopping .item-quantity {
+    position: absolute;
+    color: #fff;
+    background-color: #f44336;
+    font-size: 0.75rem;
+    border-radius: 50%;
+    padding: 1px 0.5px;
+    border: 0.5px solid #f44336;
+    top: -5px;
+    right: 0;
+}
+
+.nav__personal {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.nav__personal.hidden {
+    display: none;
+}
+
+.nav__toggle-icon,
+.nav__cart-icon,
+.nav__user-icon {
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 0 0.25rem;
+}
+
+.nav__user {
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    /* display: block; */
+    position: absolute;
+    right: 5%;
+    top: calc(10vh - 10px);
+    background-color: #000;
+    z-index: 10;
+}
+
+.dropdown-menu ul {
+    list-style: none;
+}
+
+.dropdown-menu ul a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 38px;
+    width: 100%;
+}
+
+.dropdown-menu ul a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+@media (max-width: 992px) {
+    .nav__toggle-icon {
+        display: block;
+    }
+
+    .nav__links {
+        position: absolute;
+        top: 10vh;
+        left: 0;
+        right: 0;
+        background-color: #444;
+        flex-direction: column;
+        justify-content: space-around;
+        z-index: 100;
+        height: 30vh;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .nav__links a {
+        margin: 1.5rem;
+    }
+
+    nav #toggler:checked ~ .nav__links {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+/* end header */
+
+/*     Main     */
+
+main {
+    grid-area: main-cell;
+}
+
+.places-item {
+    display: flex;
+    margin: 60px 20px;
+    justify-content: space-between;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.places-img {
+    width: 30%;
+}
+
+.places-img img {
+    width: 100%;
+    padding: 10px;
+}
+
+.places-item .places-body {
+    width: 55%;
+    margin: 0px 15px;
+}
+
+.places-body .place-name {
+    font-size: 1.75rem;
+    padding: 5px;
+}
+
+.places-body .place-description {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.places-body h3 {
+    color: rgb(62, 60, 56);
+    padding: 10px;
+    font-size: 25px;
+}
+
+.places-booking {
+    width: 15%;
+    text-align: center;
+}
+
+.places-booking .booking-title {
+    text-align: center;
+    font-size: 1.25rem;
+    margin: 1rem 0;
+}
+
+.places-booking .book-now {
+    display: block;
+    text-decoration: none;
+    background-color: #1976d2;
+    color: white;
+    border-radius: 30px;
+    font-size: 1rem;
+    margin: 10px auto;
+    padding: 10px 10px;
+    width: 150px;
+}
+
+input[type="number"] {
+    width: 150px;
+    height: 30px;
+}
+
+.places-booking .places-booking .book-now:hover {
+    background-color: #2196f3;
+}
+
+@keyframes animatedColors {
+    0% {
+        color: red;
+    }
+
+    20% {
+        color: orange;
+    }
+
+    40% {
+        color: yellow;
+    }
+
+    60% {
+        color: green;
+    }
+
+    80% {
+        color: blue;
+    }
+
+    100% {
+        color: purple;
+    }
+}
+
+.box-animation {
+    margin: 10px auto;
+    width: 70%;
+    padding: 10px;
+    font-size: 1.2em;
+    color: #fff;
+    text-align: center;
+    border-radius: 1em;
+    animation: animatedColors 5s linear infinite alternate;
+}
+
+@media all and (max-width: 1170px) {
+    .places-item {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .places-img {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .places-booking {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .places-item .places-body {
+        width: 100%;
+    }
+}
+
+/* end main */
+
+/* footer */
+
+footer {
+    grid-area: footer-cell;
+    height: auto;
+    margin-top: 50px;
+    background-color: #2d2e33;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+}
+
+.left p,
+b {
+    color: antiquewhite;
+}
+
+.left p i {
+    color: white;
+}
+
+.main {
+    padding: 20px;
+    width: 40%;
+    text-align: center;
+}
+
+.main ul {
+    font-size: 20px;
+}
+
+.main ul a {
+    text-decoration: none;
+    color: bisque;
+}
+
+.right {
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+}
+
+.footer h4 {
+    position: relative;
+    display: inline-flex;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 27px;
+    color: aquamarine;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+}
+
+.footer ul li {
+    padding: 10px;
+}
+
+.footer ul li:hover {
+    font-weight: bold;
+}
+
+.footer p {
+    text-align: start;
+    padding: 5px;
+}
+
+.footer .icon {
+    display: inline-block;
+}
+
+.footer i {
+    padding: 5px;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 35px;
+    font-size: 25px;
+    margin: 10px 15px;
+}
+
+.footer p {
+    text-align: center;
+}
+
+.footer p img {
+    padding: 10px 10px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1110px) {
+    .left,
+    .main,
+    .right {
+        width: 100%;
+    }
+    footer {
+        flex-direction: column;
+    }
+}
+
+/* end footer */

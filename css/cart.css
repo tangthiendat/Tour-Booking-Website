@@ -1,0 +1,155 @@
+body {
+    display: grid;
+    grid-template-areas:
+        "header-cell"
+        "main-cell"
+        "footer-cell";
+}
+
+/* HEADER */
+header {
+    grid-area: header-cell;
+}
+
+nav {
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5%;
+    height: 8vh;
+}
+
+.nav__logo {
+    margin-top: 0;
+    width: 140px;
+    cursor: pointer;
+}
+
+/* MAIN */
+
+main {
+    grid-area: main-cell;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cart {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-item {
+    display: flex;
+    margin: 20px 10px;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.place-img {
+    width: 30%;
+}
+
+.place-img img {
+    width: 100%;
+    padding: 10px;
+}
+
+.place-info {
+    width: 70%;
+    padding: 10px 15px;
+    position: relative;
+}
+
+.place-info .place-name {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+.place-info .total {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    font-size: 1.5rem;
+}
+
+.place-info .icon-delete {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #f44336;
+}
+
+.payment {
+    width: 30%;
+    margin: 20px 10px;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    height: 18rem;
+    text-align: center;
+}
+
+.payment-info {
+    text-align: right;
+    width: 80%;
+    margin: 20px auto;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.payment-info tr td:first-child {
+    text-align: left;
+}
+
+.payment-info tr td {
+    padding: 10px;
+}
+
+.payment .btn-pay {
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    font-weight: bold;
+    width: 50%;
+    margin: 20px auto;
+    background-color: #e65100;
+    color: #fff;
+}
+
+.payment .btn-pay:hover {
+    background-color: #ef6c00;
+}
+
+/* FOOTER */
+footer {
+    grid-area: footer-cell;
+    height: auto;
+    margin-top: 50px;
+    background-color: #2d2e33;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content {
+    padding: 20px;
+    width: 50%;
+    text-align: center;
+}
+
+.footer-content h4 {
+    position: relative;
+    display: inline-flex;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 27px;
+    color: aquamarine;
+    text-align: center;
+}
+
+.footer-content p img {
+    padding: 10px 10px;
+    font-size: 20px;
+}
