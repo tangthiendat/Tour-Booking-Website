@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <title>Trang chủ</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <input type="checkbox" name="" id="toggler" class="hidden" />
+                <label for="toggler" class="fa-solid fa-bars nav__toggle-icon hidden"></label>
+                <img class="nav__logo" src="images/logo.png" alt="logo" />
+                <ul class="nav__links">
+                    <li><a class="active" href="#">Trang Chủ</a></li>
+                    <li><a href="product.html">Tour Du Lịch</a></li>
+                    <li><a href="#">Về Chúng Tôi</a></li>
+                </ul>
+                <a class="nav__btn-login" href="login.html">Đăng nhập</a>
+                <div class="nav__personal hidden">
+                    <div class="nav__shopping">
+                        <i class="fa fa-shopping-cart nav__cart-icon"></i>
+                    </div>
+                    <div class="nav__user">
+                        <i class="fa fa-user nav__user-icon"></i>
+                        <span class="nav__username">Tang Thien Dat &nbsp; <i class="fa fa-caret-down"></i></span>
+                        <div class="dropdown-menu hidden">
+                            <ul>
+                                <li><a href="#">Đổi mật khẩu</a></li>
+                                <li><a href="#">Đăng xuất</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="hero">
+                <div class="hero-content">
+                    <h1 class="caption">Khám phá những địa điểm vô cùng hấp dẫn</h1>
+                    <a class="btn-explore" href="product.html">Khám phá ngay</a>
+                </div>
+            </section>
+            <section class="why">
+                <h1 class="why__title">Tại sao lại chọn chúng tôi?</h1>
+                <div class="features">
+                    <div class="feature__item">
+                        <img class="feature__icon" src="images/index/technology.png" alt="technology" />
+                        <h1 class="feature__title">Hiện đại</h1>
+                        <p class="feature__description">Ứng dụng công nghệ mới nhất</p>
+                    </div>
+                    <div class="feature__item">
+                        <img class="feature__icon" src="images/index/quality-service.png" alt="quality-service" />
+                        <h1 class="feature__title">Sản phẩm & Dịch vụ</h1>
+                        <p class="feature__description">Đa dạng - Chất lượng - An toàn</p>
+                    </div>
+                    <div class="feature__item">
+                        <img class="feature__icon" src="images/index/best-price.png" alt="best-price" />
+                        <h1 class="feature__title">Giá cả</h1>
+                        <p class="feature__description">Luôn có mức giá tốt nhất</p>
+                    </div>
+                    <div class="feature__item">
+                        <img class="feature__icon" src="images/index/easy-booking.png" alt="technology" />
+                        <h1 class="feature__title">Dễ dàng</h1>
+                        <p class="feature__description">Đặt tour dễ dàng và nhanh chóng</p>
+                    </div>
+                    <div class="feature__item">
+                        <img class="feature__icon" src="images/index/safe-payment.png" alt="safe-payment" />
+                        <h1 class="feature__title">Thanh toán</h1>
+                        <p class="feature__description">An toàn & linh hoạt</p>
+                    </div>
+                    <div class="feature__item">
+                        <img class="feature__icon" src="images/index/technical-support.png" alt="support" />
+                        <h1 class="feature__title">Hỗ trợ</h1>
+                        <p class="feature__description">Hotline & trực tuyến (08h00 - 22h00)</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="review" id="review">
+                <h1 class="heading">ĐÁNH GIÁ CỦA KHÁCH HÀNG</h1>
+                <div class="box-container">
+                    <div class="box">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <p>Chất lượng dịch vụ tốt, nhân viên tư vấn nhiệt tình, giá tốt so với thị trường.</p>
+
+                        <div class="user">
+                            <img src="./images/index/user1.jpg" alt="user1" />
+                            <div class="user-info">
+                                <h3>Anh Khánh</h3>
+                                <span>Hài lòng</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <p>Chất lượng dịch vụ tốt, nhân viên tư vấn nhiệt tình, giá tốt so với thị trường.</p>
+
+                        <div class="user">
+                            <img src="./images/index/user2.png" alt="user2" />
+                            <div class="user-info">
+                                <h3>Chị Ngọc</h3>
+                                <span>Hài lòng</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <p>Chất lượng dịch vụ tốt, nhân viên tư vấn nhiệt tình, giá tốt so với thị trường.</p>
+
+                        <div class="user">
+                            <img src="./images/index/user1.jpg" alt="user3" />
+                            <div class="user-info">
+                                <h3>Anh Minh</h3>
+                                <span>Hài lòng</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer left">
+                <h4 class="title">Liên lạc</h4>
+                <p><b>Địa chỉ: </b>đường 3/2, phường An Khánh, Quận Ninh Kiều, TP.Cần Thơ</p>
+                <p><b>SĐT: </b>(+84) 234 434 33</p>
+                <p><b>Email: </b>staybnb@gmail.com</p>
+                <p class="icon"><i class="fa-brands fa-facebook"></i></p>
+                <p class="icon"><i class="fa-brands fa-instagram"></i></p>
+                <p class="icon"><i class="fa-brands fa-google-plus"></i></p>
+                <p class="icon"><i class="fa-brands fa-square-x-twitter"></i></p>
+            </div>
+
+            <div class="footer main">
+                <h4 class="title">Về chúng tôi</h4>
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="product.html">Danh sách tour</a></li>
+                    <li><a href="#">Hỗ trợ</a></li>
+                    <li><a href="#">Khác</a></li>
+                </ul>
+            </div>
+
+            <div class="footer right">
+                <h4 class="title">Phương thức thanh toán</h4>
+                <p>
+                    <img src="./images/card/cir.png" width="100" height="80" alt="" />
+                    <img src="./images/card/jcb.png" width="100" height="80" alt="" />
+                    <img src="./images/card/master.png" width="100" height="80" alt="" />
+                    <img src="./images/card/visa.png" width="100" height="80" alt="" />
+                    <img src="./images/card/amazon.png" width="100" height="80" alt="" />
+                    <img src="./images/card/apple.png" width="100" height="80" alt="" />
+                </p>
+            </div>
+        </footer>
+        <script src="js/index.js"></script>
+    </body>
+</html>
